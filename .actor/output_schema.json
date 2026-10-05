@@ -1,0 +1,11 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "B2B Company & Tech Stack Enricher Output",
+    "properties": {
+        "default": {
+            "type": "dataset",
+            "title": "Enriched Companies Dataset",
+            "description": "Primary dataset containing enriched company profiles with detected tech stacks, contacts, and socials."
+        }
+    }
+}

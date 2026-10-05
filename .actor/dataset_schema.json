@@ -1,0 +1,47 @@
+{
+    "actorSpecification": 1,
+    "fields": {
+        "type": "object",
+        "properties": {
+            "url": { "type": "string" },
+            "domain": { "type": "string" },
+            "companyName": { "type": "string" },
+            "description": { "type": "string" },
+            "techCount": { "type": "integer" },
+            "techStack": { "type": "array" },
+            "contacts": { "type": "object" },
+            "socialProfiles": { "type": "object" },
+            "meta": { "type": "object" },
+            "scrapedAt": { "type": "string" }
+        },
+        "required": ["domain", "url"]
+    },
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "companyName",
+                    "domain",
+                    "techCount",
+                    "techStack",
+                    "contacts",
+                    "socialProfiles",
+                    "description",
+                    "url"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "companyName": { "label": "Company" },
+                    "domain": { "label": "Domain" },
+                    "techCount": { "label": "Tech Count" },
+                    "techStack": { "label": "Tech Stack" },
+                    "contacts": { "label": "Contacts" },
+                    "socialProfiles": { "label": "Social Profiles" }
+                }
+            }
+        }
+    }
+}
