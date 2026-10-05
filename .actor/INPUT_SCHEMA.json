@@ -13,7 +13,7 @@
             "default": [
                 { "url": "https://apify.com" }
             ],
-            "editor": "globlist"
+            "editor": "requestListSources"
         },
         "extractTechStack": {
             "title": "Detect Tech Stack",
