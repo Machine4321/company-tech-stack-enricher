@@ -1,0 +1,58 @@
+{
+    "title": "B2B Company & Tech Stack Enricher Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Target Website URLs / Domains",
+            "type": "array",
+            "description": "List of company websites or domain URLs to enrich. Accepts standard URLs (e.g., https://apify.com, https://stripe.com).",
+            "prefill": [
+                { "url": "https://apify.com" }
+            ],
+            "default": [
+                { "url": "https://apify.com" }
+            ],
+            "editor": "globlist"
+        },
+        "extractTechStack": {
+            "title": "Detect Tech Stack",
+            "type": "boolean",
+            "description": "Identify website technologies (CMS, eCommerce, frontend frameworks, analytics, CRM, payments, and hosting).",
+            "default": true
+        },
+        "extractContacts": {
+            "title": "Extract Public Contacts",
+            "type": "boolean",
+            "description": "Extract publicly visible email addresses and phone numbers.",
+            "default": true
+        },
+        "extractSocials": {
+            "title": "Extract Social Profiles",
+            "type": "boolean",
+            "description": "Extract social media links (LinkedIn, Twitter/X, GitHub, Facebook, Instagram, YouTube).",
+            "default": true
+        },
+        "maxRequestsPerCrawl": {
+            "title": "Max Domains to Process",
+            "type": "integer",
+            "description": "Maximum number of domains to process in a single run.",
+            "minimum": 1,
+            "maximum": 5000,
+            "default": 10
+        },
+        "proxyConfiguration": {
+            "title": "Proxy Configuration",
+            "type": "object",
+            "description": "Proxy settings for reliable crawling. Default uses Apify Proxy.",
+            "prefill": {
+                "useApifyProxy": true
+            },
+            "default": {
+                "useApifyProxy": true
+            },
+            "editor": "proxy"
+        }
+    },
+    "required": ["startUrls"]
+}

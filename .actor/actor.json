@@ -1,0 +1,8 @@
+{
+    "actorSpecification": 1,
+    "name": "company-tech-stack-enricher",
+    "title": "B2B Company & Tech Stack Enricher (AI & MCP)",
+    "description": "Enrich any domain with tech stack (Shopify, WordPress, Next.js, Stripe, HubSpot), contact emails, phones, and social profiles in seconds. Optimized for AI agents, MCP workflows, and sales automation.",
+    "version": "0.1",
+    "dockerfile": "./.actor/Dockerfile"
+}
