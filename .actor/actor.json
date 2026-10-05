@@ -4,9 +4,9 @@
     "title": "B2B Company & Tech Stack Enricher (AI & MCP)",
     "description": "Enrich any domain with tech stack (Shopify, WordPress, Next.js, Stripe, HubSpot), contact emails, phone numbers, and social links in seconds. Built for AI agents, MCP workflows, and sales automation.",
     "version": "0.1",
-    "dockerfile": "./.actor/Dockerfile",
+    "dockerfile": "./Dockerfile",
     "storages": {
-        "dataset": "./.actor/dataset_schema.json"
+        "dataset": "./dataset_schema.json"
     },
-    "output": "./.actor/output_schema.json"
+    "output": "./output_schema.json"
 }
